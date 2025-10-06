@@ -162,7 +162,7 @@ def model_info():
 
         return jsonify({
             "model_loaded": True,
-            "model_type": "Multinomial Naive Bayes",
+            "model_type": "Logistic Regression",
             "classes": classes,
             "vectorizer_features": analyzer.tfidf.max_features if analyzer.tfidf else None
         })
